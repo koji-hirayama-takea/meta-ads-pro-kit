@@ -1,0 +1,4 @@
+# 自社の実値が入る設定は配布・共有しない
+meta-ads-ops/config.md
+.DS_Store
+*.log
