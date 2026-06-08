@@ -1,4 +1,7 @@
-# 自社の実値が入る設定は配布・共有しない
+# 自社の実値・素材が入る設定/素材は配布・共有しない
 meta-ads-ops/config.md
+meta-ads-creative/config.md
+meta-ads-creative/assets/
+output/
 .DS_Store
 *.log
