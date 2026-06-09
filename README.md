@@ -49,8 +49,8 @@ meta-ads-pro-kit/
 同梱の `CLAUDE.md` を読んだAIが、**2スキルの導入 → config 作成 → 広告操作の土台（Meta Ads MCP）が未導入なら導入まで**、順番に手伝ってくれます。最後に Claude Code を再起動すれば完了です。
 
 MCP は用途で2通りから選べます（AIが案内します）：
-- **手軽（おすすめ）：Meta公式リモートMCP** — `.mcp.json` にURLを1行足して**ブラウザでログイン（OAuth）するだけ**。トークン発行作業も月額も不要。対話的に「話しかけて回す」用途に最適（無人cronには不向き）。
-- **上級：自作MCP** — 自動運用（cron）や完全な自前管理をしたい人向け。[meta-ads-mcp](https://github.com/koji-hirayama-takea/meta-ads-mcp) を clone してセットアップ（Meta側トークン発行は人間操作・AIが案内）。
+- **手軽（おすすめ）：Meta公式リモートMCP** — `.mcp.json` にURLを1行足して**ブラウザでログイン（OAuth）するだけ**。トークン発行作業も月額も不要。対話的に「話しかけて回す」用途に最適。
+- **上級：自作MCP** — ブラウザ操作なしで動くトークンで、**完全無人の自動運用（cron）や完全な自前管理**をしたい人向け。[meta-ads-mcp](https://github.com/koji-hirayama-takea/meta-ads-mcp) を clone してセットアップ（Meta側トークン発行は人間操作・AIが案内）。
 
 ### 手動でやる場合
 
