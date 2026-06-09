@@ -40,6 +40,16 @@ meta-ads-pro-kit/
 
 ## インストール
 
+### かんたん（おすすめ）：AIに「セットアップして」と頼む
+
+このフォルダを置いて Claude Code を開き、こう言うだけです。
+
+> 「このキットをセットアップして」
+
+同梱の `CLAUDE.md` を読んだAIが、**2スキルの導入 → config 作成 → 広告操作の土台（meta-ads MCP）が未導入なら clone してそのセットアップまで**、順番に手伝ってくれます（Meta側のトークン発行だけは、Metaの画面での操作が必要なのでAIが案内します）。最後に Claude Code を再起動すれば完了です。
+
+### 手動でやる場合
+
 1. このリポジトリを取得（GitHub からダウンロード or clone）
 2. `meta-ads-creative/` と `meta-ads-ops/` を、あなたのプロジェクトの `.claude/skills/` 配下にコピー
 3. 各スキルの `config.example.md` を `config.md` にコピーし、自社の値・素材を記入
