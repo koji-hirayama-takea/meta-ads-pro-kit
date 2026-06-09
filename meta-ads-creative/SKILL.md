@@ -6,7 +6,9 @@ description: Use when generating Meta (Facebook/Instagram) ad creatives — squa
 # Meta Ads Creative — 広告クリエイティブ生成（dual-reference 方式）
 
 このスキルは、**ブランドの世界観を保ったまま、成果の出る Meta 広告の静止画**をAIに作らせるための型です。
-広告を「操作」する meta-ads MCP、「運用」する meta-ads-ops に対して、これは広告の「**中身（画像）を作る**」担当です。
+広告を「操作」する Meta Ads MCP、「運用」する meta-ads-ops に対して、これは広告の「**中身（画像）を作る**」担当です。
+
+> 入稿（画像アップロード→クリエイティブ作成）は Meta Ads MCP に委譲します。**Meta公式リモートMCPでも自作MCPでも動く**。本文中のツール名（`upload_ad_image` / `create_ad_creative` 等）は**例示**で、MCP により名前が多少違うので、接続中のMCPが公開している同じ役割のツールを使うこと。
 
 > ⚠️ これは **手法（technique）** です。あなたのブランド素材（ロゴ・キャラクター・色・CTA文言）は
 > `config.example.md` をコピーした `config.md` に登録して使います。勝ちクリエイティブそのものは、運用しながら育てる部分です。

@@ -8,8 +8,9 @@ description: Use when setting up, launching, or operating Meta (Facebook/Instagr
 このスキルは、Meta 広告を **事故らせずに・再現性高く・成果が出る形で**運用するための判断の型です。
 広告 API を叩く「手」（meta-ads MCP）に対して、このスキルが「**いつ・何を・どう判断するか**」の頭脳を提供します。
 
-> 前提：広告の操作には `meta-ads` MCP（無料配布の Meta Ads MCP）が入っていること。
+> 前提：広告の操作には Meta Ads MCP が入っていること。**Meta公式リモートMCP（OAuthだけで使える）でも、自作MCPでも、どちらでも動く**。
 > このスキルは「判断」を担当し、実際の作成・更新・取得・診断は MCP のツールに委譲します。
+> ⚠️ 本文中のツール名（`get_campaigns` / `search_interests` 等）は**例示**です。MCP によって名前が多少違うので、**接続中のMCPが公開しているツール一覧から、同じ役割のものを選んで使う**こと。
 
 > ⚠️ このスキルは **汎用の方法論（method）** です。あなたの事業に合わせた具体値（予算・目標CPA・勝ちオーディエンス等）は
 > `config.example.md` をコピーした `config.md` に書いて運用してください。中身の数値はあなたが育てる部分です。
