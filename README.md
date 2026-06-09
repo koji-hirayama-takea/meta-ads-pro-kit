@@ -46,14 +46,18 @@ meta-ads-pro-kit/
 
 > 「このキットをセットアップして」
 
-同梱の `CLAUDE.md` を読んだAIが、**2スキルの導入 → config 作成 → 広告操作の土台（meta-ads MCP）が未導入なら clone してそのセットアップまで**、順番に手伝ってくれます（Meta側のトークン発行だけは、Metaの画面での操作が必要なのでAIが案内します）。最後に Claude Code を再起動すれば完了です。
+同梱の `CLAUDE.md` を読んだAIが、**2スキルの導入 → config 作成 → 広告操作の土台（Meta Ads MCP）が未導入なら導入まで**、順番に手伝ってくれます。最後に Claude Code を再起動すれば完了です。
+
+MCP は用途で2通りから選べます（AIが案内します）：
+- **手軽（おすすめ）：Meta公式リモートMCP** — `.mcp.json` にURLを1行足して**ブラウザでログイン（OAuth）するだけ**。トークン発行作業も月額も不要。対話的に「話しかけて回す」用途に最適（無人cronには不向き）。
+- **上級：自作MCP** — 自動運用（cron）や完全な自前管理をしたい人向け。[meta-ads-mcp](https://github.com/koji-hirayama-takea/meta-ads-mcp) を clone してセットアップ（Meta側トークン発行は人間操作・AIが案内）。
 
 ### 手動でやる場合
 
 1. このリポジトリを取得（GitHub からダウンロード or clone）
 2. `meta-ads-creative/` と `meta-ads-ops/` を、あなたのプロジェクトの `.claude/skills/` 配下にコピー
 3. 各スキルの `config.example.md` を `config.md` にコピーし、自社の値・素材を記入
-4. 広告操作には [meta-ads-mcp](https://github.com/koji-hirayama-takea/meta-ads-mcp) が必要なので、未導入なら先にセットアップ
+4. 広告操作には Meta Ads MCP が必要。**手軽派は Meta公式リモートMCP**（`.mcp.json` に `"meta-ads-official": { "type": "http", "url": "https://mcp.facebook.com/ads" }` を足して `/mcp` でOAuth承認）、**自動化派は自作 [meta-ads-mcp](https://github.com/koji-hirayama-takea/meta-ads-mcp)** をセットアップ
 5. Claude Code を再起動 → スキルが認識される
 
 ---
